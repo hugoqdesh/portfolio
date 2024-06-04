@@ -47,6 +47,12 @@ export default function Home() {
           </h1>
         </div>
 
+        <div className="bg-black/10 rounded py-1 px-2 -mb-4 mt-3">
+          <p className="text-md font-medium text-black/70">
+            Programmer x Martial Artist
+          </p>
+        </div>
+
         <p className="max-w-sm md:max-w-lg text-lg mt-4 select-text">
           I am a fullstack focused webdeveloper. I design, construct, optimize
           and develop web apps and websites
