@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
@@ -24,25 +23,6 @@ export default function Projects() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 80,
-        damping: 20,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
   return (
     <section>
       <div className="fixed inset-0 flex justify-center h-8 mt-20 select-none">
@@ -55,27 +35,15 @@ export default function Projects() {
       </div>
 
       <div className="flex flex-col items-center py-32 select-none">
-        <motion.div
-          className="flex flex-col gap-10"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          <motion.span
-            className="text-5xl md:text-6xl text-center font-semibold"
-            variants={itemVariants}
-          >
+        <div className="flex flex-col gap-10">
+          <span className="text-5xl md:text-6xl text-center font-semibold">
             Projects
-          </motion.span>
-          <motion.div
-            className="flex flex-col items-center gap-8 w-full p-8"
-            variants={containerVariants}
-          >
+          </span>
+          <div className="flex flex-col items-center gap-8 w-full p-8">
             {projects.map((project) => (
-              <motion.div
+              <div
                 key={project.name}
                 className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
-                variants={itemVariants}
               >
                 <div className="flex flex-col max-w-96 md:max-w-xl items-center w-full h-full gap-4 md:gap-6 p-6 rounded-xl">
                   {project.underDevelopment && (
@@ -117,10 +85,10 @@ export default function Projects() {
                     </Link>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );
