@@ -4,7 +4,7 @@ import { RiMenu5Fill } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <nav className="flex items-center justify-between max-w-sm md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-4 md:px-0 mx-auto mt-4">
+    <nav className="flex items-center justify-between max-w-sm md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-4 md:px-0 mx-auto mt-4 select-none">
       <div className="font-bold">
         <Link href="/" className="text-2xl group">
           <span className="text-black group-hover:text-[#FF5733] transition duration-300">
@@ -39,7 +39,7 @@ const Header = () => {
           href=""
           className="hover:text-[#FF5733] font-semibold transition duration-300"
         >
-          Contact
+          Hire Me
         </Link>
       </div>
 

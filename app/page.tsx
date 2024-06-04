@@ -30,15 +30,16 @@ export default function Home() {
         <p className="text-2xl xl:text-3xl font-semibold">
           Hello, It&apos;s me
         </p>
-        <div className="relative">
-          <h1 className="text-5xl xl:text-6xl font-bold relative z-10">
+        <div className="relative w-[90%] md:w-[50%] group md:mt-1 lg:mt-2 xl:mt-3 mb-0 lg:mb-3 xl:mb-8">
+          <h1 className="text-5xl xl:text-6xl font-bold relative z-10 group-hover:-translate-y-4 transition duration-300">
             Hugo - HJ
           </h1>
-          <h1 className="text-5xl xl:text-6xl font-bold absolute top-1 left-1 text-[#FF5733]/80 z-0 w-full">
+          <h1 className="text-[4rem] md:text-7xl lg:text-8xl xl:text-9xl blur-sm absolute -top-6 md:-top-3 lg:-top-8 xl:-top-10 left-1 text-black/10 z-0 w-full group-hover:text-[#FF5733]/40 transition duration-300">
             Hugo - HJ
           </h1>
         </div>
-        <p className="max-w-sm md:max-w-lg text-lg mt-4">
+
+        <p className="max-w-sm md:max-w-lg text-lg mt-4 select-text">
           I am a fullstack focused webdeveloper. I design, construct, optimize
           and develop web apps and websites
         </p>
@@ -70,7 +71,7 @@ export default function Home() {
             )}
           </Link>
         </div>
-        <p className="fixed bottom-5 bg-[black]/20 rounded p-2 select-text">
+        <p className="fixed bottom-5 animate-bounce  bg-[black]/20 rounded p-2 select-text">
           discord: hugoqdesh
         </p>
       </div>
