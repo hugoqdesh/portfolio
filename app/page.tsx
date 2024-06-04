@@ -34,7 +34,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-center text-center gap-2 select-none">
+      <section className="flex min-h-screen flex-col items-center justify-center text-center gap-2 select-none">
         <p className="text-2xl xl:text-3xl font-semibold">
           Hello, It&apos;s me
         </p>
@@ -82,7 +82,7 @@ export default function Home() {
         <p className="fixed bottom-5 animate-bounce  bg-[black]/20 rounded p-2 select-text">
           discord: hugoqdesh
         </p>
-      </div>
+      </section>
     </>
   );
 }

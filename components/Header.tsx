@@ -1,8 +1,16 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="flex items-center justify-between max-w-sm md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-4 md:px-0 mx-auto mt-4 select-none">
       <div className="font-bold">
@@ -18,33 +26,49 @@ const Header = () => {
 
       <div className="gap-6 text-lg hidden md:flex text-black/60">
         <Link
-          href=""
+          href="/"
           className="hover:text-[#FF5733] font-semibold transition duration-300"
         >
           Home
         </Link>
         <Link
-          href=""
+          href="/about"
           className="hover:text-[#FF5733] font-semibold transition duration-300"
         >
           About
         </Link>
         <Link
-          href=""
+          href="/projects"
           className="hover:text-[#FF5733] font-semibold transition duration-300"
         >
           Projects
         </Link>
         <Link
-          href=""
+          href="/hire"
           className="hover:text-[#FF5733] font-semibold transition duration-300"
         >
           Hire Me
         </Link>
       </div>
 
-      <div className="md:hidden">
+      <div onClick={handleMenu} className="md:hidden">
         <RiMenu5Fill size={24} />
+        {isMenuOpen && (
+          <div className="fixed top-14 right-4 flex flex-col gap-4 bg-white border-2 border-[#FF5733]/70 rounded p-4 items-center">
+            <Link href="/" className="font-semibold">
+              Home
+            </Link>
+            <Link href="/about" className="font-semibold">
+              About
+            </Link>
+            <Link href="/projects" className="font-semibold">
+              Projects
+            </Link>
+            <Link href="/hire" className="font-semibold">
+              Hire Me
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );
