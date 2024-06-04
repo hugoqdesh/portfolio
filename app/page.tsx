@@ -39,7 +39,7 @@ export default function Home() {
           Hello, It&apos;s me
         </p>
         <div className="relative w-[90%] md:w-[50%] group md:mt-1 lg:mt-2 xl:mt-3 mb-0 lg:mb-3 xl:mb-8">
-          <h1 className="text-5xl xl:text-6xl font-bold group-hover:translate-y-4 relative z-10">
+          <h1 className="text-5xl xl:text-6xl font-bold group-hover:-translate-y-4 transition duration-300 relative z-10">
             Hugo / HJ
           </h1>
 
