@@ -34,7 +34,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="flex min-h-screen flex-col items-center justify-center text-center gap-2 select-none">
+      <section className="flex min-h-screen flex-col items-center justify-center text-center gap-2 select-none overflow-hidden">
         <p className="text-2xl xl:text-3xl font-semibold">
           Hello, It&apos;s me
         </p>
