@@ -71,9 +71,9 @@ export function Form() {
   };
 
   return (
-    <div>
+    <div className="max-w-sm md:max-w-xl mx-auto p-4 md:p-0">
       <Toaster richColors />
-      <p className="text-md max-w-lg mt-6">
+      <p className="text-md max-w-lg text-center mt-6">
         If you are interested in hiring me, please fill out the form below.
       </p>
 
