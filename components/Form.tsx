@@ -24,7 +24,9 @@ export function Form() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement & HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -113,6 +115,7 @@ export function Form() {
             name="message"
             placeholder="Hey! I would need your skills to bring my idea to life. It needs to be beautiful, responsive, and user-friendly. I would love to work with you and build this site!"
             type="textarea"
+            textarea={true}
             value={formData.message}
             onChange={handleChange}
           />
