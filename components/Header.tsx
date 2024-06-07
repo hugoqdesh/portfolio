@@ -50,7 +50,7 @@ const Header = () => {
       <div onClick={handleMenu} className="md:hidden">
         <RiMenu5Fill size={24} />
         {isMenuOpen && (
-          <div className="fixed top-14 right-4 flex flex-col gap-4 bg-white border-2 border-[#FF5733]/70 rounded p-4 items-center">
+          <div className="fixed top-14 right-4 flex flex-col gap-3 bg-white border-2 border-[#FF5733]/70 rounded px-6 py-2 items-center">
             <Link href="/" className="font-semibold">
               Home
             </Link>
