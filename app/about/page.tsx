@@ -6,8 +6,12 @@ import Image from "next/image";
 export default function About() {
   // Define animation variants
   const containerVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
@@ -33,9 +37,9 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-16 px-6">
             <motion.div
               className="flex justify-center items-center w-48 md:w-80 mx-auto relative"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             >
               <Image
                 src="/pfp.png"
@@ -48,9 +52,9 @@ export default function About() {
 
             <motion.div
               className="text-center md:text-left text-md font-medium select-text md:px-10 xl:px-0 md:mt-5 lg:mt-10 max-w-xl"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
             >
               <p className="mb-4">
                 I&apos;m Hugo, also known as HJ, a 16-year-old coder/programmer
@@ -71,9 +75,9 @@ export default function About() {
 
           <motion.div
             className="flex flex-col items-center mt-12 md:mt-20"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
           >
             <span className="text-4xl md:text-5xl text-center font-semibold">
               Tech Stack I Use
@@ -85,7 +89,7 @@ export default function About() {
             className="grid grid-cols-5 px-20 md:px-30 lg:px-40 xl:px-96 place-items-center gap-10 md:mt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, staggerChildren: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
           >
             <i className="devicon-nextjs-plain colored text-4xl"></i>
             <i className="devicon-react-original colored text-4xl"></i>
