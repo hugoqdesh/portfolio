@@ -33,15 +33,6 @@ export default function Projects() {
     },
   };
 
-  // const projectVariants = {
-  //   hidden: { opacity: 0, scale: 0.9 },
-  //   visible: {
-  //     opacity: 1,
-  //     scale: 1,
-  //     transition: { duration: 0.5, ease: "easeOut" },
-  //   },
-  // };
-
   return (
     <motion.section
       initial="hidden"
@@ -53,12 +44,9 @@ export default function Projects() {
           <span className="text-5xl md:text-6xl text-center font-semibold">
             Projects
           </span>
-          <motion.div
-            className="flex flex-col items-center gap-8 w-full p-8"
-            variants={containerVariants}
-          >
+          <div className="flex flex-col items-center gap-8 w-full p-8">
             {projects.map((project) => (
-              <motion.div
+              <div
                 key={project.name}
                 className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
               >
@@ -77,8 +65,8 @@ export default function Projects() {
                     <Image
                       src={project.thumbnail}
                       alt={"Thumbnail"}
-                      width={9999}
-                      height={9999}
+                      width={320}
+                      height={320}
                       className="object-cover object-center select-none rounded-xl border border-neutral-200/60 shadow-lg"
                     />
                   </div>
@@ -102,9 +90,9 @@ export default function Projects() {
                     </Link>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </motion.section>
