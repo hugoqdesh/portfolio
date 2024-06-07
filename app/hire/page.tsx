@@ -6,15 +6,11 @@ import { Form } from "@/components/Form";
 export default function Hire() {
   // Define animation variants
   const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
@@ -30,16 +26,16 @@ export default function Hire() {
             className="text-5xl md:text-6xl text-center font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
           >
             Hire Me
           </motion.span>
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
         >
           <Form />
         </motion.div>

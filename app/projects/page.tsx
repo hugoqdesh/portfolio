@@ -18,7 +18,7 @@ export default function Projects() {
       name: "Portfolio",
       thumbnail: "/portfolio.png",
       description:
-        "This is my personal portfolio website your are currently viewing. Hope you enjoy it and see you soon!",
+        "This is my personal portfolio website you are currently viewing. Hope you enjoy it and see you soon!",
       url: "https://hugoqdesh.vercel.app",
       underDevelopment: true,
     },
@@ -26,12 +26,13 @@ export default function Projects() {
 
   // Define animation variants
   const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.5,
+        ease: "easeOut",
         when: "beforeChildren",
         staggerChildren: 0.2,
       },
@@ -39,8 +40,12 @@ export default function Projects() {
   };
 
   const projectVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
@@ -56,8 +61,6 @@ export default function Projects() {
           </span>
           <motion.div
             className="flex flex-col items-center gap-8 w-full p-8"
-            initial="hidden"
-            animate="visible"
             variants={containerVariants}
           >
             {projects.map((project) => (
