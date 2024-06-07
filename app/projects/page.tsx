@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,18 +24,47 @@ export default function Projects() {
     },
   ];
 
+  // Define animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const projectVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  };
+
   return (
-    <section>
+    <motion.section
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <div className="flex flex-col items-center py-32 select-none">
         <div className="flex flex-col gap-10">
           <span className="text-5xl md:text-6xl text-center font-semibold">
             Projects
           </span>
-          <div className="flex flex-col items-center gap-8 w-full p-8">
+          <motion.div
+            className="flex flex-col items-center gap-8 w-full p-8"
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+          >
             {projects.map((project) => (
-              <div
+              <motion.div
                 key={project.name}
                 className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
+                variants={projectVariants}
               >
                 <div className="flex flex-col max-w-96 md:max-w-xl items-center w-full h-full gap-4 md:gap-6 p-6 rounded-xl">
                   {project.underDevelopment && (
@@ -76,11 +106,11 @@ export default function Projects() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

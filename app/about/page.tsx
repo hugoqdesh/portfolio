@@ -1,8 +1,21 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
+  // Define animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <section>
+    <motion.section
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <link
         rel="stylesheet"
         type="text/css"
@@ -18,7 +31,12 @@ export default function About() {
 
         <div className="flex flex-col gap-10 mt-10 md:mt-16">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-16 px-6">
-            <div className="flex justify-center items-center w-48 md:w-80 mx-auto relative">
+            <motion.div
+              className="flex justify-center items-center w-48 md:w-80 mx-auto relative"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <Image
                 src="/pfp.png"
                 alt="Profile Picture"
@@ -26,9 +44,14 @@ export default function About() {
                 height={320}
                 className="rounded-full object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="text-center md:text-left text-md font-medium select-text md:px-10 xl:px-0 md:mt-5 lg:mt-10 max-w-xl">
+            <motion.div
+              className="text-center md:text-left text-md font-medium select-text md:px-10 xl:px-0 md:mt-5 lg:mt-10 max-w-xl"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <p className="mb-4">
                 I&apos;m Hugo, also known as HJ, a 16-year-old coder/programmer
                 with a passion for technology.
@@ -43,17 +66,27 @@ export default function About() {
                 arts. It helps me stay physically in shape and build discipline,
                 focus, and a growth mindset, which is crucial for programming.
               </p>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="flex flex-col items-center mt-12 md:mt-20">
+          <motion.div
+            className="flex flex-col items-center mt-12 md:mt-20"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <span className="text-4xl md:text-5xl text-center font-semibold">
               Tech Stack I Use
             </span>
             <p className="text-sm mt-1 font-medium">(everything)</p>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-5 px-20 md:px-30 lg:px-40 xl:px-96 place-items-center gap-10 md:mt-2">
+          <motion.div
+            className="grid grid-cols-5 px-20 md:px-30 lg:px-40 xl:px-96 place-items-center gap-10 md:mt-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, staggerChildren: 0.1 }}
+          >
             <i className="devicon-nextjs-plain colored text-4xl"></i>
             <i className="devicon-react-original colored text-4xl"></i>
             <i className="devicon-vscode-plain colored text-4xl"></i>
@@ -69,9 +102,9 @@ export default function About() {
             <i className="devicon-prisma-original colored text-4xl"></i>
             <i className="devicon-mongodb-plain colored text-4xl"></i>
             <i className="devicon-mongoose-original colored text-4xl"></i>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
