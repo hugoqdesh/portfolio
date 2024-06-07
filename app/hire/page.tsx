@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 import { Form } from "@/components/Form";
 
 export default function Hire() {
-  // Define animation variants
   const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: -20 },
     visible: {
       opacity: 1,
       y: 0,

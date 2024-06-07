@@ -24,29 +24,23 @@ export default function Projects() {
     },
   ];
 
-  // Define animation variants
   const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: -20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const projectVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
       transition: { duration: 0.5, ease: "easeOut" },
     },
   };
+
+  // const projectVariants = {
+  //   hidden: { opacity: 0, scale: 0.9 },
+  //   visible: {
+  //     opacity: 1,
+  //     scale: 1,
+  //     transition: { duration: 0.5, ease: "easeOut" },
+  //   },
+  // };
 
   return (
     <motion.section
@@ -67,7 +61,6 @@ export default function Projects() {
               <motion.div
                 key={project.name}
                 className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
-                variants={projectVariants}
               >
                 <div className="flex flex-col max-w-96 md:max-w-xl items-center w-full h-full gap-4 md:gap-6 p-6 rounded-xl">
                   {project.underDevelopment && (

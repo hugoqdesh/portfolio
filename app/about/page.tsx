@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
-  // Define animation variants
   const containerVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
