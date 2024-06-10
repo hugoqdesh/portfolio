@@ -70,7 +70,7 @@ export default function About() {
               </p>
               <p>
                 Outside of coding, I&apos;m also passionate about training and
-                martial arts (mainly judo and thai box). It helps me stay
+                martial arts (mainly Judo and Muay Thai). It helps me stay
                 physically in shape, build discipline, focus, and a growth
                 mindset, which I believe is crucial for programming.
               </p>
