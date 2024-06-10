@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   const containerVariants = {
@@ -41,33 +42,35 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             >
               <Image
-                src="/pfp.png"
+                src="/one.png"
                 alt="Profile Picture"
                 width={320}
                 height={320}
-                className="rounded-full object-cover"
+                className="rounded-full object-cover object-center select-none h-48 md:h-80 shadow-lg shadow-[#FF5733]/40"
               />
             </motion.div>
 
             <motion.div
-              className="text-center md:text-left text-md font-medium select-text md:px-10 xl:px-0 md:mt-5 lg:mt-10 max-w-xl"
+              className="text-center md:text-left text-base font-medium select-text md:px-10 xl:px-0 md:mt-4 lg:mt-5 max-w-xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
             >
-              <p className="mb-4">
+              <p className="mb-8">
                 I&apos;m Hugo, also known as HJ, a 16-year-old coder/programmer
-                with a passion for technology.
+                from Estonia with a passion for technology.
               </p>
-              <p className="mb-4">
+              <p className="mb-6">
                 My journey started some years ago. And now, it has become a big
-                part of my life. Im always trying to learn new things and
-                improve my skills. Im open to new opportunities and challenges.
+                part of my current life. I am always trying to learn new things
+                and improve my skills wherever possible. I would also like to
+                try out developing mobile apps sometime in the near future.
               </p>
               <p>
-                Outside of coding, Im also passionate about training and martial
-                arts. It helps me stay physically in shape and build discipline,
-                focus, and a growth mindset, which is crucial for programming.
+                Outside of coding, I&apos;m also passionate about training and
+                martial arts (mainly judo and thai boxing). It helps me stay
+                physically in shape, build discipline, focus, and a growth
+                mindset, which I believe is crucial for programming.
               </p>
             </motion.div>
           </div>
@@ -90,21 +93,125 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
           >
-            <i className="devicon-nextjs-plain colored text-4xl"></i>
-            <i className="devicon-react-original colored text-4xl"></i>
-            <i className="devicon-vscode-plain colored text-4xl"></i>
-            <i className="devicon-css3-plain colored text-4xl"></i>
-            <i className="devicon-html5-plain colored text-4xl"></i>
-            <i className="devicon-javascript-plain colored text-4xl"></i>
-            <i className="devicon-typescript-plain colored text-4xl"></i>
-            <i className="devicon-git-plain colored text-4xl"></i>
-            <i className="devicon-postman-plain colored text-4xl"></i>
-            <i className="devicon-vercel-original colored text-4xl"></i>
-            <i className="devicon-npm-original-wordmark colored text-4xl"></i>
-            <i className="devicon-tailwindcss-original colored text-4xl"></i>
-            <i className="devicon-prisma-original colored text-4xl"></i>
-            <i className="devicon-mongodb-plain colored text-4xl"></i>
-            <i className="devicon-mongoose-original colored text-4xl"></i>
+            <Link
+              href="https://nextjs.org/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-nextjs-plain colored text-4xl "></i>
+            </Link>
+            <br />
+            <Link
+              href="https://react.dev/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-react-original colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://code.visualstudio.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-vscode-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://en.wikipedia.org/wiki/CSS"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-css3-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://en.wikipedia.org/wiki/HTML"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-html5-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://en.wikipedia.org/wiki/JavaScript"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-javascript-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.typescriptlang.org/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-typescript-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.git-scm.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-git-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.postman.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-postman-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://vercel.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-vercel-original colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.npmjs.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-npm-original-wordmark colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://tailwindcss.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-tailwindcss-original colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.prisma.io/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-prisma-original colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://www.mongodb.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-mongodb-plain colored text-4xl"></i>
+            </Link>
+            <br />
+            <Link
+              href="https://mongoosejs.com/"
+              className="hover:scale-150 transition duration-300"
+              target="_blank"
+            >
+              <i className="devicon-mongoose-original colored text-4xl"></i>
+            </Link>
           </motion.div>
         </div>
       </div>

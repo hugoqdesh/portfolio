@@ -87,7 +87,7 @@ export default function Home() {
         >
           <FaGithub size={36} />
           {isHoveredGithub && (
-            <p className="absolute top-full mt-2 bg-black/20 rounded p-2">
+            <p className="absolute top-full mt-2 bg-black/20 rounded p-2 transition">
               Github
             </p>
           )}

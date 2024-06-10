@@ -12,7 +12,6 @@ export default function Projects() {
       description:
         "Zylo is a link in bio service for social media platforms. Sign up, fill in your information and share your profile across Discord, Instagram, Twitter or wherever.",
       url: "https://zylo-bio.vercel.app",
-      underDevelopment: true,
     },
     {
       name: "Portfolio",
@@ -20,7 +19,6 @@ export default function Projects() {
       description:
         "This is my personal portfolio website you are currently viewing. Hope you enjoy it and see you soon!",
       url: "https://hugoqdesh.vercel.app",
-      underDevelopment: true,
     },
   ];
 
@@ -51,17 +49,7 @@ export default function Projects() {
                 className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
               >
                 <div className="flex flex-col max-w-96 md:max-w-xl items-center w-full h-full gap-4 md:gap-6 p-6 rounded-xl">
-                  {project.underDevelopment && (
-                    <div className="flex bg-yellow-400 px-2 py-1 rounded-md justify-center text-sm">
-                      <p>Under Development</p>
-                    </div>
-                  )}
-                  {!project.underDevelopment && (
-                    <div className="flex bg-green-400 px-2 py-1 rounded-md justify-center text-sm">
-                      <p>Active</p>
-                    </div>
-                  )}
-                  <div className="flex aspect-[5/3]">
+                  <div className="flex aspect-[5/3] mt-2">
                     <Image
                       src={project.thumbnail}
                       alt={"Thumbnail"}
