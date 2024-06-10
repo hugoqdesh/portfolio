@@ -56,6 +56,8 @@ export default function Projects() {
                       width={320}
                       height={320}
                       className="object-cover object-center select-none rounded-xl border border-neutral-200/60 shadow-lg"
+                      loading="eager"
+                      priority
                     />
                   </div>
                   <div className="flex flex-col gap-3 py-1">

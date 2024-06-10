@@ -47,6 +47,8 @@ export default function About() {
                 width={320}
                 height={320}
                 className="rounded-full object-cover object-center select-none h-48 md:h-80 shadow-lg shadow-[#FF5733]/40"
+                loading="eager"
+                priority
               />
             </motion.div>
 
@@ -68,7 +70,7 @@ export default function About() {
               </p>
               <p>
                 Outside of coding, I&apos;m also passionate about training and
-                martial arts (mainly judo and thai boxing). It helps me stay
+                martial arts (mainly judo and thai box). It helps me stay
                 physically in shape, build discipline, focus, and a growth
                 mindset, which I believe is crucial for programming.
               </p>
