@@ -42,7 +42,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             >
               <Image
-                src="/one.png"
+                src="/pfp.png"
                 alt="Profile Picture"
                 width={320}
                 height={320}
