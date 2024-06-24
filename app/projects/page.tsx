@@ -7,6 +7,13 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      name: "ViroDo",
+      thumbnail: "/virodo.png",
+      description:
+        "ViroDo is an online platform that allows users to learn different martial art styles.",
+      url: "https://virodo.vercel.app",
+    },
+    {
       name: "Zylo",
       thumbnail: "/zylo.png",
       description:
@@ -46,7 +53,7 @@ export default function Projects() {
             {projects.map((project) => (
               <div
                 key={project.name}
-                className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/40"
+                className="p-[2px] rounded-[0.9rem] border-2 border-[#FF5733]/15 bg-[#f8f8f8]"
               >
                 <div className="flex flex-col max-w-96 md:max-w-xl items-center w-full h-full gap-4 md:gap-6 p-6 rounded-xl">
                   <div className="flex aspect-[5/3] mt-2">
