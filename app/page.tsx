@@ -80,7 +80,7 @@ export default function Home() {
                 Besides coding, I do Muay Thai and Judo
               </p>
 
-              <BorderBeam size={250} duration={15} delay={0} />
+              <BorderBeam duration={15} />
             </div>
           </div>
           <div className="relative">
@@ -105,7 +105,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <BorderBeam size={250} duration={10} delay={12} />
+              <BorderBeam duration={10} />
             </div>
           </div>
           <div className="border-2 border-white/15 rounded-xl md:col-span-2 relative">
