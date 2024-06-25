@@ -77,7 +77,7 @@ export default function Home() {
                 <br /> I&apos;m interested in trying to start developing mobile
                 apps soon.
                 <br />
-                Besides coding, I practice Judo and Muay Thai
+                Besides coding, I do Muay Thai and Judo
               </p>
 
               <BorderBeam size={250} duration={15} delay={0} />
