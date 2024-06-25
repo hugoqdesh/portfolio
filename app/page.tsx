@@ -64,10 +64,10 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-10 mt-12">
           <div className="relative">
-            <div className="border-[1px] border-white/50 rounded-xl">
-              <div className="absolute z-10 -rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none">
-                <p className="font-semibold">About</p>
-              </div>
+            <div className="border-2 border-white/15 rounded-xl">
+              <span className="font-semibold absolute -rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none z-10">
+                About
+              </span>
 
               <p className="mt-6 mb-4 px-4 font-medium">
                 I&apos;m Hugo (HJ), a 16-year-old full stack dev with a passion
@@ -84,10 +84,10 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <div className="border-[1px] border-white/50 rounded-xl">
-              <div className="absolute z-10 rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none">
-                <p className="font-semibold">Projects</p>
-              </div>
+            <div className="border-2 border-white/15 rounded-xl">
+              <span className="font-semibold absolute rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none z-10">
+                Projects
+              </span>
 
               <div className="mt-6 mb-4 px-4 grid grid-cols-2 gap-4">
                 {projects.map((project) => (
@@ -98,7 +98,7 @@ export default function Home() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300 animate-pulse mt-1"
+                      className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300 animate-pulse hover:animate-none mt-1"
                     >
                       View Project
                     </a>
@@ -108,39 +108,54 @@ export default function Home() {
               <BorderBeam size={250} duration={10} delay={12} />
             </div>
           </div>
-          <div className="border-[1px] border-white/50 rounded-xl md:col-span-2 relative">
-            <div className="absolute z-10 inset-0 flex max-w-max mx-auto max-h-max justify-center items-center bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none transform -translate-y-1/2 translate-x-3">
-              <p className="font-semibold">Contacts & Hire Me</p>
-            </div>
+          <div className="border-2 border-white/15 rounded-xl md:col-span-2 relative">
+            <span className="font-semibold absolute whitespace-nowrap bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
+              Contacts & Hire Me
+            </span>
 
             <div className="mt-8 mb-4 px-4 grid grid-cols-3 place-items-center gap-4">
               <a
                 href="https://github.com/hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+                className="flex gap-1 items-center text-white/50 max-w-max group"
               >
-                <p>GitHub</p>
-                <ArrowUpRight size={16} className="-ml-1" />
+                <p className="group-hover:text-white transition duration-300">
+                  GitHub
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
               </a>
 
               <a
                 href="https://instagram.com/hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+                className="flex gap-1 items-center text-white/50 max-w-max group"
               >
-                <p>Instagram</p>
-                <ArrowUpRight size={16} className="-ml-1" />
+                <p className="group-hover:text-white transition duration-300">
+                  Instagram
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
               </a>
               <a
                 href="mailto:gitjohan5@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+                className="flex gap-1 items-center text-white/50 max-w-max group"
               >
-                <p>Email</p>
-                <ArrowUpRight size={16} className="-ml-1" />
+                <p className="group-hover:text-white transition duration-300">
+                  Email
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
               </a>
             </div>
           </div>
