@@ -1,121 +1,156 @@
 "use client";
 
-import { FaGithub, FaInstagram } from "react-icons/fa";
-import Link from "next/link";
-import { useState } from "react";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [isHoveredGithub, setIsHoveredGithub] = useState(false);
-  const [isHoveredInstagram, setIsHoveredInstagram] = useState(false);
+  const projects = [
+    {
+      name: "ViroDo",
+      description: "Learn martial arts",
+      url: "",
+    },
+    {
+      name: "Zylo",
+      description: "Link in bio service",
+      url: "",
+    },
+    {
+      name: "Portfolio",
+      description: "My portfolio",
+      url: "",
+    },
+  ];
 
-  const handleMouseEnterGithub = () => {
-    setIsHoveredGithub(true);
-  };
-
-  const handleMouseLeaveGithub = () => {
-    setIsHoveredGithub(false);
-  };
-
-  const handleMouseEnterInstagram = () => {
-    setIsHoveredInstagram(true);
-  };
-
-  const handleMouseLeaveInstagram = () => {
-    setIsHoveredInstagram(false);
+  const pageVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
   };
 
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center text-center gap-2 select-none">
-      <motion.p
-        className="text-2xl xl:text-3xl font-semibold"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        Hello, It&apos;s me
-      </motion.p>
-
-      <motion.div
-        className="relative w-[90%] md:w-[50%] group md:mt-1 lg:mt-2 xl:mt-3 mb-0 lg:mb-3 xl:mb-8"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <h1 className="text-5xl xl:text-6xl font-bold group-hover:-translate-y-4 transition duration-300 relative z-10">
-          Hugo / HJ
-        </h1>
-
-        <h1 className="text-[4rem] md:text-7xl lg:text-8xl xl:text-9xl blur-sm absolute -top-6 md:-top-3 lg:-top-8 xl:-top-10 left-1 text-black/10 z-0 w-full group-hover:text-[#FF5733]/40 transition duration-300">
-          Hugo / HJ
-        </h1>
-      </motion.div>
-
-      <motion.div
-        className="bg-black/10 rounded py-1 px-2 -mb-4 mt-3"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-      >
-        <p className="text-md font-medium text-black/70">
-          Programmer x Martial Artist
-        </p>
-      </motion.div>
-
-      <motion.p
-        className="max-w-sm md:max-w-lg text-lg mt-4 select-text"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        I am a fullstack focused webdeveloper. I design, construct, optimize and
-        develop web apps and websites
-      </motion.p>
-
-      <motion.div
-        className="flex gap-12 mt-2 relative"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.9 }}
-      >
-        <Link
-          href="https://github.com/hugoqdesh"
-          target="_blank"
-          onMouseEnter={handleMouseEnterGithub}
-          onMouseLeave={handleMouseLeaveGithub}
-          className="relative flex flex-col items-center"
-        >
-          <FaGithub size={36} />
-          {isHoveredGithub && (
-            <p className="absolute top-full mt-2 bg-black/20 rounded p-2 transition">
-              Github
+    <motion.main
+      initial="hidden"
+      animate="visible"
+      variants={pageVariants}
+      className="flex min-h-screen flex-col items-center mx-auto max-w-4xl px-4 py-20"
+    >
+      <section>
+        <div className="flex justify-between">
+          <div>
+            <h1 className="text-4xl max-w-max font-semibold tracking-tight">
+              Hey, I&apos;m Hugo - a web developer
+            </h1>
+            <p className="mt-4 text-lg max-w-max text-white/50">
+              Here to help you with your next project <br /> while developing
+              some of my own.
             </p>
-          )}
-        </Link>
-        <Link
-          href="https://www.instagram.com/hugoqdesh"
-          target="_blank"
-          onMouseEnter={handleMouseEnterInstagram}
-          onMouseLeave={handleMouseLeaveInstagram}
-          className="relative flex flex-col items-center"
-        >
-          <FaInstagram size={36} />
-          {isHoveredInstagram && (
-            <p className="absolute top-full mt-2 bg-black/20 rounded p-2">
-              Instagram
-            </p>
-          )}
-        </Link>
-      </motion.div>
+          </div>
 
-      <motion.p
-        className="fixed bottom-5 animate-bounce bg-[black]/20 rounded p-2 select-text"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        discord: hugoqdesh
-      </motion.p>
-    </section>
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden hidden md:block mr-6">
+            <Image
+              src="/pfp.png"
+              alt="Hugo"
+              width={250}
+              height={250}
+              layout="intrinsic"
+              className="object-cover object-center select-none w-full h-full"
+              loading="eager"
+              priority
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-10 mt-12">
+          <div className="relative">
+            <div className="border-[1px] border-white/50 rounded-xl">
+              <div className="absolute z-10 -rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none">
+                <p className="font-semibold">About</p>
+              </div>
+
+              <p className="mt-6 mb-4 px-4 font-medium">
+                I&apos;m Hugo (HJ), a 16-year-old full stack dev with a passion
+                for technology. <br />
+                <br /> I started my journey a few years ago and now continually
+                improving my skills. <br />
+                <br /> I&apos;m interested in trying to start developing mobile
+                apps soon.
+                <br />
+                Besides coding, I practice Judo and Muay Thai
+              </p>
+
+              <BorderBeam size={250} duration={15} delay={0} />
+            </div>
+          </div>
+          <div className="relative">
+            <div className="border-[1px] border-white/50 rounded-xl">
+              <div className="absolute z-10 rotate-6 -translate-y-3 translate-x-3 bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none">
+                <p className="font-semibold">Projects</p>
+              </div>
+
+              <div className="mt-6 mb-4 px-4 grid grid-cols-2 gap-4">
+                {projects.map((project) => (
+                  <div key={project.name} className="mb-4">
+                    <h2 className="text-xl font-semibold">{project.name}</h2>
+                    <p className="text-white/80 mt-1">{project.description}</p>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300 animate-pulse mt-1"
+                    >
+                      View Project
+                    </a>
+                  </div>
+                ))}
+              </div>
+              <BorderBeam size={250} duration={10} delay={12} />
+            </div>
+          </div>
+          <div className="border-[1px] border-white/50 rounded-xl md:col-span-2 relative">
+            <div className="absolute z-10 inset-0 flex max-w-max mx-auto max-h-max justify-center items-center bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none transform -translate-y-1/2 translate-x-3">
+              <p className="font-semibold">Contacts & Hire Me</p>
+            </div>
+
+            <div className="mt-8 mb-4 px-4 grid grid-cols-3 place-items-center gap-4">
+              <a
+                href="https://github.com/hugoqdesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+              >
+                <p>GitHub</p>
+                <ArrowUpRight size={16} className="-ml-1" />
+              </a>
+
+              <a
+                href="https://instagram.com/hugoqdesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+              >
+                <p>Instagram</p>
+                <ArrowUpRight size={16} className="-ml-1" />
+              </a>
+              <a
+                href="mailto:gitjohan5@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300"
+              >
+                <p>Email</p>
+                <ArrowUpRight size={16} className="-ml-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 flex gap-4 items-center justify-between px-2 text-white/50 text-sm">
+          <p>discord - hugoqdesh</p>
+          <p>2007-2024</p>
+        </div>
+      </section>
+    </motion.main>
   );
 }
