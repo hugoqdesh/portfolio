@@ -1,7 +1,7 @@
 "use client";
 
 import { BorderBeam } from "@/components/magicui/border-beam";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, FolderGit } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -94,14 +94,17 @@ export default function Home() {
                   <div key={project.name} className="mb-4">
                     <h2 className="text-xl font-semibold">{project.name}</h2>
                     <p className="text-white/80 mt-1">{project.description}</p>
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex gap-2 items-center text-white/50 max-w-max hover:text-white hover:scale-105 transition duration-300 animate-pulse hover:animate-none mt-1"
-                    >
-                      View Project
-                    </a>
+                    <div className="flex items-center gap-2">
+                      <FolderGit size={16} className="text-white/70 mt-1" />
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex gap-2 items-center text-white/50 max-w-max hover:text-blue-400 hover:scale-105 transition duration-300 animate-pulse hover:animate-none mt-1"
+                      >
+                        View Project
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -110,51 +113,93 @@ export default function Home() {
           </div>
           <div className="border-2 border-white/15 rounded-xl md:col-span-2 relative">
             <span className="font-semibold absolute whitespace-nowrap bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
-              Contacts & Hire Me
+              Socials
             </span>
 
             <div className="mt-8 mb-4 px-4 grid grid-cols-3 place-items-center gap-4">
               <a
-                href="https://github.com/hugoqdesh"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white/50 max-w-max group"
+                className="flex gap-1 items-center text-white max-w-max group"
               >
-                <p className="group-hover:text-white transition duration-300">
-                  GitHub
-                </p>
-                <ArrowUpRight
-                  size={16}
-                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
-                />
-              </a>
-
-              <a
-                href="https://instagram.com/hugoqdesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white/50 max-w-max group"
-              >
-                <p className="group-hover:text-white transition duration-300">
+                <p className="group-hover:text-blue-400 transition duration-300">
                   Instagram
                 </p>
                 <ArrowUpRight
                   size={16}
-                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1 items-center text-white max-w-max group"
+              >
+                <p className="group-hover:text-blue-400 transition duration-300">
+                  Discord
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
                 />
               </a>
               <a
                 href="mailto:gitjohan5@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white/50 max-w-max group"
+                className="flex gap-1 items-center text-white max-w-max group"
               >
-                <p className="group-hover:text-white transition duration-300">
+                <p className="group-hover:text-blue-400 transition duration-300">
+                  Github
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1 items-center text-white max-w-max group"
+              >
+                <p className="group-hover:text-blue-400 transition duration-300">
+                  Tiktok
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1 items-center text-white max-w-max group"
+              >
+                <p className="group-hover:text-blue-400 transition duration-300">
                   Email
                 </p>
                 <ArrowUpRight
                   size={16}
-                  className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
+                />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1 items-center text-white max-w-max group"
+              >
+                <p className="group-hover:text-blue-400 transition duration-300">
+                  Youtube
+                </p>
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
                 />
               </a>
             </div>
@@ -162,7 +207,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12 flex gap-4 items-center justify-between px-2 text-white/50 text-sm">
-          <p>discord - hugoqdesh</p>
+          <p>@hugoqdesh</p>
           <p>2007-2024</p>
         </div>
       </section>
