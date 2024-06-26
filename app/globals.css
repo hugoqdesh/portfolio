@@ -8,3 +8,14 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}

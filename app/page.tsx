@@ -70,8 +70,8 @@ export default function Home() {
               </span>
 
               <p className="mt-6 mb-4 px-4 font-medium">
-                I&apos;m Hugo (HJ), a 16-year-old full stack dev with a passion
-                for technology. <br />
+                I&apos;m Hugo (HJ), a <span>16-year-old</span> full stack dev
+                with a passion for technology. <br />
                 <br /> I started my journey a few years ago and now continually
                 improving my skills. <br />
                 <br /> I&apos;m interested in trying to start developing mobile
@@ -100,7 +100,7 @@ export default function Home() {
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex gap-2 items-center text-white/50 max-w-max hover:text-blue-400 hover:scale-105 transition duration-300 animate-pulse hover:animate-none mt-1"
+                        className="flex gap-2 items-center text-white/50 max-w-max hover:text-blue-400 hover:scale-105 transition duration-300 animate-pulse hover:animate-none mt-1 select-none"
                       >
                         View Project
                       </a>
@@ -111,8 +111,8 @@ export default function Home() {
               <BorderBeam duration={10} />
             </div>
           </div>
-          <div className="border-2 border-white/15 rounded-xl md:col-span-2 relative">
-            <span className="font-semibold absolute whitespace-nowrap bg-[#121212] px-3 rounded-full border-2 border-white/50 select-none left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
+          <div className="border-2 border-white/15 rounded-xl md:col-span-2 relative select-none">
+            <span className="font-semibold absolute whitespace-nowrap bg-[#121212] px-3 rounded-full border-2 border-white/50 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
               Socials
             </span>
 
