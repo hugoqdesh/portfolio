@@ -116,11 +116,11 @@ export default function Home() {
               Socials
             </span>
 
-            <div className="mt-6 text-center select-text">
+            <div className="mt-6 text-center select-text px-1">
               <p className="text-xl font-bold text-blue-400">
                 currently looking for work
               </p>
-              <p className="font-medium text-white/60">
+              <p className="font-medium text-sm mt-1 text-white/60">
                 If you wish to hire me contact me down below <br />
               </p>
             </div>
