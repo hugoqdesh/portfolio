@@ -8,19 +8,19 @@ import { motion } from "framer-motion";
 export default function Home() {
   const projects = [
     {
-      name: "ViroDo",
-      description: "Learn martial arts",
-      url: "",
-    },
-    {
-      name: "Zylo",
-      description: "Link in bio service",
-      url: "",
+      name: "Portfolio",
+      description: "My portfolio",
+      url: "https://hugoqdesh.vercel.app/",
     },
     {
       name: "Portfolio",
       description: "My portfolio",
-      url: "",
+      url: "https://hugoqdesh.vercel.app/",
+    },
+    {
+      name: "Portfolio",
+      description: "My portfolio",
+      url: "https://hugoqdesh.vercel.app/",
     },
   ];
 
@@ -77,7 +77,7 @@ export default function Home() {
                 <br /> I&apos;m interested in trying to start developing mobile
                 apps soon.
                 <br />
-                Besides coding, I do Muay Thai and Judo
+                Besides coding, I do Muay Thai and Judo.
               </p>
 
               <BorderBeam duration={15} />
@@ -116,9 +116,18 @@ export default function Home() {
               Socials
             </span>
 
-            <div className="mt-8 mb-4 px-4 grid grid-cols-3 place-items-center gap-4">
+            <div className="mt-6 text-center select-text">
+              <p className="text-xl font-bold text-blue-400">
+                currently looking for work
+              </p>
+              <p className="font-medium text-white/60">
+                If you wish to hire me contact me down below <br />
+              </p>
+            </div>
+
+            <div className="mt-8 mb-6 px-4 grid grid-cols-3 place-items-center gap-4 ">
               <a
-                href=""
+                href="https://www.instagram.com/hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-1 items-center text-white max-w-max group"
@@ -132,22 +141,13 @@ export default function Home() {
                 />
               </a>
 
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white max-w-max group"
-              >
-                <p className="group-hover:text-blue-400 transition duration-300">
-                  Discord
+              <p className="flex gap-1 items-center text-white max-w-max">
+                <p className="select-text text-center">
+                  Discord: <br /> hugoqdesh
                 </p>
-                <ArrowUpRight
-                  size={16}
-                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
-                />
-              </a>
+              </p>
               <a
-                href="mailto:gitjohan5@gmail.com"
+                href="https://github.com/hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-1 items-center text-white max-w-max group"
@@ -161,7 +161,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href=""
+                href="https://www.tiktok.com/@hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-1 items-center text-white max-w-max group"
@@ -175,7 +175,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href=""
+                href="mailto:gitjohan5@gmail.com.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-1 items-center text-white max-w-max group"
@@ -189,7 +189,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href=""
+                href="https://www.youtube.com/@hugoqdesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-1 items-center text-white max-w-max group"
