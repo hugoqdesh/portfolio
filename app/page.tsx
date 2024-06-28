@@ -1,7 +1,7 @@
 "use client";
 
 import { BorderBeam } from "@/components/magicui/border-beam";
-import { ArrowUpRight, FolderGit } from "lucide-react";
+import { ArrowUpRight, FolderGit, Github } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -116,7 +116,7 @@ export default function Home() {
               Socials
             </span>
 
-            <div className="mt-6 text-center select-text px-1">
+            <div className="mt-6 text-center px-1">
               <p className="text-xl font-bold text-blue-400">
                 currently looking for work
               </p>
@@ -141,39 +141,8 @@ export default function Home() {
                 />
               </a>
 
-              <p className="flex gap-1 items-center text-white max-w-max">
-                <p className="select-text text-center">
-                  Discord: <br /> hugoqdesh
-                </p>
-              </p>
-              <a
-                href="https://github.com/hugoqdesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white max-w-max group"
-              >
-                <p className="group-hover:text-blue-400 transition duration-300">
-                  Github
-                </p>
-                <ArrowUpRight
-                  size={16}
-                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
-                />
-              </a>
-              <a
-                href="https://www.tiktok.com/@hugoqdesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white max-w-max group"
-              >
-                <p className="group-hover:text-blue-400 transition duration-300">
-                  Tiktok
-                </p>
-                <ArrowUpRight
-                  size={16}
-                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
-                />
-              </a>
+              <p>|</p>
+
               <a
                 href="mailto:gitjohan5@gmail.com.com"
                 target="_blank"
@@ -188,26 +157,26 @@ export default function Home() {
                   className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
                 />
               </a>
-              <a
-                href="https://www.youtube.com/@hugoqdesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-1 items-center text-white max-w-max group"
-              >
-                <p className="group-hover:text-blue-400 transition duration-300">
-                  Youtube
-                </p>
-                <ArrowUpRight
-                  size={16}
-                  className="group-hover:text-blue-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"
-                />
-              </a>
+            </div>
+            <div className="mt-8 mb-6 px-4 text-center">
+              <p className="text-sm select-text">or via discord: hugoqdesh</p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 flex gap-4 items-center justify-between px-2 text-white/50 text-sm">
-          <p>@hugoqdesh</p>
+          <div className="flex gap-2 items-center">
+            <p>@hugoqdesh</p>
+            <a
+              href="https://www.github.com/hugoqdesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white/50 rounded-full p-1 hover:scale-105 hover:border-blue-400 group transition duration-300"
+            >
+              <Github size={20} className="group-hover:text-blue-400" />
+            </a>
+          </div>
+
           <p>2007-2024</p>
         </div>
       </section>
