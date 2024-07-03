@@ -13,20 +13,20 @@ export default function Home() {
       url: "https://hugoqdesh.vercel.app/",
     },
     {
-      name: "Portfolio",
-      description: "My portfolio",
-      url: "https://hugoqdesh.vercel.app/",
+      name: "Zylo",
+      description: "Link in bio",
+      url: "https://zylo-bio.vercel.app/",
     },
     {
-      name: "Portfolio",
-      description: "My portfolio",
-      url: "https://hugoqdesh.vercel.app/",
+      name: "Digestify",
+      description: "Security tools",
+      url: "https://digestify.vercel.app",
     },
   ];
 
   const pageVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5 } },
+    visible: { opacity: 1, transition: { duration: 1.5 } },
   };
 
   return (
@@ -125,7 +125,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-8 mb-6 px-4 grid grid-cols-3 place-items-center gap-4 ">
+            <div className="mt-8 mb-6 px-16 grid grid-cols-3 place-items-center gap-4">
               <a
                 href="https://www.instagram.com/hugoqdesh"
                 target="_blank"
