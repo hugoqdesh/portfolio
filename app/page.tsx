@@ -171,9 +171,9 @@ export default function Home() {
               href="https://www.github.com/hugoqdesh"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/50 rounded-full p-1 hover:scale-105 hover:border-blue-400 group transition duration-300"
+              className="border border-white/50 rounded-full p-1 hover:scale-105 hover:border-blue-400 hover:text-blue-400 transition duration-200"
             >
-              <Github size={20} className="group-hover:text-blue-400" />
+              <Github size={20} />
             </a>
           </div>
 
