@@ -41,5 +41,3 @@ npm run build
 
 yarn build
 ```
-
-## 📄 License
