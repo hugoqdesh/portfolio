@@ -9,6 +9,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hugoqdesh.vercel.app/"),
+  keywords: [
+    "hugoqdesh" + "portfolio",
+    "hj" + "portfolio",
+    "Hugo Johan Di Maria",
+  ],
   title: "HJ - Web Developer",
   description: "Hey im Hugo - a 16 year old web developer",
   openGraph: {
