@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.hugoqdesh.vercel.app/
+
+# Sitemaps
+Sitemap: https://hugoqdesh.vercel.app/sitemap.xml
