@@ -38,7 +38,7 @@ const Info = () => {
           alt=""
           width={400}
           height={400}
-          className="mx-auto md:ml-auto mt-12 md:mt-0 rounded-md"
+          className="mx-auto md:ml-auto mt-12 md:mt-0 rounded-md px-6 md:px-0"
         />
       </div>
 
