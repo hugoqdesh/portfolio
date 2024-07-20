@@ -74,7 +74,7 @@ export default function Home() {
             </motion.h1>
             <br />
             <motion.p className="text-xl" variants={itemVariants}>
-              Developer with a passion for building new web apps <br /> and
+              A developer with a passion for building new web apps <br /> and
               websites that bring value to the world and their users! <br />{" "}
               Currently Working on{" "}
               <Link
@@ -134,11 +134,10 @@ export default function Home() {
       </motion.section>
 
       <motion.div
-        className="2xl:mt-10 hidden select-none w-max h-max lg:flex mx-auto cursor-pointer"
+        className="2xl:mt-10 hidden select-none w-max h-max lg:flex mx-auto cursor-pointer animate-bounce"
         initial="hidden"
         animate="visible"
         variants={scrollIndicatorVariants}
-        whileHover="bounce"
       >
         <ChevronDown size={36} />
       </motion.div>

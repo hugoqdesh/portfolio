@@ -19,14 +19,26 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed py-5 xl:px-0 px-6 max-w-7xl mx-auto w-full flex justify-between items-center z-10 text-white bg-[#121212]">
+      <header className="fixed py-5 xl:px-0 px-6 max-w-7xl mx-auto w-full flex justify-between items-center z-10 bg-[#121212]">
         <div className="select-none text-xl">
-          <Link href="/">Hugo Di Maria</Link>
+          <Link href="/" className="text-white">
+            Hugo Di Maria
+          </Link>
         </div>
 
         <nav className="hidden md:flex gap-8 text-lg">
-          <Link href="/#work">Work</Link>
-          <Link href="/#info">Info</Link>
+          <Link
+            href="/#work"
+            className="hover:text-white transition ease-in-out duration-300"
+          >
+            Work
+          </Link>
+          <Link
+            href="/#info"
+            className="hover:text-white transition ease-in-out duration-300"
+          >
+            Info
+          </Link>
         </nav>
 
         <button
