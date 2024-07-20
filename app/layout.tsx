@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "./_head";
 
 const font = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -9,7 +10,7 @@ const font = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hugoqdesh.vercel.app/"),
+  metadataBase: new URL("https://hugoqdesh.lol/"),
   keywords: [
     "hugoqdesh" + "portfolio",
     "hj" + "portfolio",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     description: "Hey im Hugo - a 16 year old web developer",
     type: "website",
     locale: "en-US",
-    url: "https://hugoqdesh.vercel.app/",
+    url: "https://hugoqdesh.lol/",
     siteName: "HJ Portfolio",
   },
 };
@@ -34,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head />
       <body className={font.className}>
         <header className="fixed w-full"></header>
         {children}

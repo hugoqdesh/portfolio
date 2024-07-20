@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.hugoqdesh.vercel.app/
+Host: https://www.hugoqdesh.lol/
 
 # Sitemaps
-Sitemap: https://hugoqdesh.vercel.app/sitemap.xml
+Sitemap: https://hugoqdesh.lol/sitemap.xml
