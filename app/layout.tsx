@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "hugoqdesh" + "portfolio",
     "hj" + "portfolio",
     "Hugo Johan Di Maria",
+    "Hugo Di Maria",
   ],
   title: "HJ - Web Developer",
   description: "Hey im Hugo - a 16 year old web developer",
