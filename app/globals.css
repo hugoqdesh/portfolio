@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply bg-[#121212] text-white/60;
+  @apply bg-[#121212] text-white;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -18,24 +18,4 @@ body {
 ::selection {
   color: black;
   background: white;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
