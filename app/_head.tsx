@@ -26,12 +26,8 @@ export default function Head() {
               "url": "https://hugoqdesh.lol",
               "image": "https://www.hugoqdesh.lol/_next/image?url=%2Fpfp.jpg&w=828&q=75",
               "sameAs": [
-                "https://www.instagram.com/hugoqdesh"
+                "https://www.instagram.com/hugoqdesh",
                 "https://github.com/hugoqdesh",
-                "https://www.linkedin.com/in/hugo-di-maria-739269319",
-                "https://twitter.com/hugoqdesh",
-                
-                
               ],
               "jobTitle": "Fullstack Developer",
             }

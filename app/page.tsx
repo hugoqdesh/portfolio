@@ -102,20 +102,6 @@ export default function Home() {
               >
                 GitHub
               </Link>{" "}
-              <Link
-                href="https://www.linkedin.com/in/hugoqdesh/"
-                target="_blank"
-                className="underline hover:text-white transition-all duration-300 underline-offset-4"
-              >
-                LinkedIn
-              </Link>{" "}
-              <Link
-                href="https://x.com/hugoqdesh"
-                target="_blank"
-                className="underline hover:text-white transition-all duration-300 underline-offset-4"
-              >
-                Twitter
-              </Link>
             </motion.p>
           </div>
 
