@@ -10,7 +10,7 @@ export default function Home() {
     {
       name: "Portfolio",
       description: "My portfolio",
-      url: "https://hugoqdesh.vercel.app/",
+      url: "https://hugoqdesh.lol/",
     },
     {
       name: "Zylo",
@@ -20,7 +20,7 @@ export default function Home() {
     {
       name: "Digestify",
       description: "Security tools",
-      url: "https://digestify.vercel.app",
+      url: "https://digestify.dev",
     },
   ];
 
