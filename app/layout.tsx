@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "./_head";
 
-const font = IBM_Plex_Sans({
+const font = Inter({
   subsets: ["latin"],
   weight: "400",
 });
