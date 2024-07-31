@@ -4,18 +4,15 @@
 
 html,
 body {
-  @apply bg-[#121212] text-white;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  @apply bg-[#ffffff] text-black;
 }
 
 ::-moz-selection {
-  /* Code for Firefox */
-  color: black;
-  background: white;
+  color: white;
+  background: #599ef1;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: #599ef1;
 }
