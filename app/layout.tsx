@@ -38,7 +38,6 @@ export default function RootLayout({
     <html lang="en">
       <Head />
       <body className={font.className}>
-        <header className="fixed w-full"></header>
         {children}
         <Analytics />
       </body>
