@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "./_head";
 
-const font = Inter({
+const font = Archivo({
   subsets: ["latin"],
   weight: "400",
 });

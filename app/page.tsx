@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="max-w-2xl mx-auto py-16 px-4">
       <header className="mb-8">
-        <div className="flex items-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center">
             <Image
               src="/me.jpg"
@@ -18,11 +18,11 @@ export default function Home() {
               className="object-cover select-none"
             />
           </div>
-          <h1 className="text-2xl ml-6">hugoqdesh</h1>
+          <h1 className="text-2xl mt-3">hugoqdesh</h1>
         </div>
       </header>
 
-      <section className="mb-8">
+      <section className="mb-8 text-center">
         <p className="text-lg">
           I&apos;m 16 years old self-taught web developer from Estonia and
           looking to get into mobile development soon. Currently working on{" "}
@@ -43,12 +43,12 @@ export default function Home() {
         </p>
         <br />
         <p className="text-lg">
-          Want to reach me? Id love to chat, my Discord is{" "}
+          Want to reach me? My Discord is{" "}
           <span className="font-semibold">@hugoqdesh</span>
         </p>
       </section>
 
-      <footer className="flex flex-col md:flex-row gap-4 group">
+      <footer className="flex flex-col md:flex-row justify-center gap-4 group">
         <Link
           href="https://github.com/hugoqdesh"
           target="_blank"
