@@ -35,7 +35,7 @@ export default function Home() {
           </Link>{" "}
           and{" "}
           <Link
-            href="https://www.digestify.dev/"
+            href=""
             target="_blank"
             className="text-[#ed4160] font-semibold"
           >
