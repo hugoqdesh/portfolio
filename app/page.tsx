@@ -32,6 +32,14 @@ export default function Home() {
             className="text-[#ed4160] font-semibold"
           >
             @digestify
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="https://www.digestify.dev/"
+            target="_blank"
+            className="text-[#ed4160] font-semibold"
+          >
+            @instgrow
           </Link>
           .
         </p>
