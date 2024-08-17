@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="mb-8 text-center">
         <p className="text-lg">
-          I&apos;m 16 years old self-taught web developer from Estonia and
+          I&apos;m a 16 year old self-taught web developer from Estonia and
           looking to get into mobile development soon. Currently working on{" "}
           <Link
             href="https://www.digestify.dev/"
@@ -51,16 +51,22 @@ export default function Home() {
         </p>
         <br />
         <p className="text-lg">
-          Want to reach me? My Discord is{" "}
+          Looking to hire me? My Discord is{" "}
           <span className="font-semibold">@hugoqdesh</span>
         </p>
+        <br />
+        <Link href="/" className="w-max mx-auto">
+          <p className="cursor-pointer hover:text-[#ed4160] transition duration-200 w-max mx-auto">
+            View Projects
+          </p>
+        </Link>
       </section>
 
       <footer className="flex flex-col md:flex-row justify-center gap-4 group">
         <Link
           href="https://github.com/hugoqdesh"
           target="_blank"
-          className="flex gap-1 items-center text-black/50 hover:text-black transition duration-200"
+          className="flex gap-1 items-center text-black/50 hover:text-black transition duration-100"
         >
           {" "}
           <Github size={18} /> github
@@ -68,7 +74,7 @@ export default function Home() {
         <Link
           href="https://www.instagram.com/hugoqdesh/"
           target="_blank"
-          className="flex gap-1 items-center text-black/50 hover:text-black transition duration-200"
+          className="flex gap-1 items-center text-black/50 hover:text-black transition duration-100"
         >
           {" "}
           <Instagram size={18} /> instagram
