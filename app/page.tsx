@@ -54,12 +54,6 @@ export default function Home() {
           Looking to hire me? My Discord is{" "}
           <span className="font-semibold">@hugoqdesh</span>
         </p>
-        <br />
-        <Link href="/" className="w-max mx-auto">
-          <p className="cursor-pointer hover:text-[#ed4160] transition duration-200 w-max mx-auto">
-            View Projects
-          </p>
-        </Link>
       </section>
 
       <footer className="flex flex-col md:flex-row justify-center gap-4 group">
