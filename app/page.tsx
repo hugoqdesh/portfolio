@@ -25,7 +25,7 @@ export default function Home() {
       <section className="mb-8 text-center">
         <p className="text-lg">
           I&apos;m a 16 year old self-taught web developer from Estonia and
-          looking to get into mobile development soon. Currently working on{" "}
+          getting into cybersecurity. Currently working on{" "}
           <Link
             href="https://www.digestify.dev/"
             target="_blank"
