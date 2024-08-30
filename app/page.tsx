@@ -27,19 +27,11 @@ export default function Home() {
           I&apos;m a 16 year old self-taught web developer from Estonia and
           getting into cybersecurity. Currently working on{" "}
           <Link
-            href="https://www.digestify.dev/"
+            href="https://quip-cards.vercel.app/"
             target="_blank"
             className="text-[#ed4160] font-semibold"
           >
-            @digestify
-          </Link>{" "}
-          and{" "}
-          <Link
-            href=""
-            target="_blank"
-            className="text-[#ed4160] font-semibold"
-          >
-            @instgrow
+            @Quip Cards
           </Link>
           .
         </p>
