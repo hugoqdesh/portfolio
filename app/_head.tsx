@@ -1,7 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hugo Di Maria",
+  description: `Hey im Hugo - a 16 year old web developer`,
+};
+
 export default function Head() {
   return (
     <head>
-      <title>Hugo Di Maria</title>
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="#fff" />
       <meta name="msapplication-TileColor" content="#fff" />
@@ -12,7 +18,7 @@ export default function Head() {
       <meta property="og:image" content="/thumbnail.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:url" content="https://hugoqdesh.lol/" />
-      <meta property="og:site_name" content="Hugo Di Maria Portfolio" />
+      <meta property="og:site_name" content="Hugo Di Maria" />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="0" />
       <script
@@ -24,12 +30,16 @@ export default function Head() {
               "@type": "Person",
               "name": "Hugo Di Maria",
               "url": "https://hugoqdesh.lol",
-              "image": "https://www.hugoqdesh.lol/_next/image?url=%2Fpfp.jpg&w=828&q=75",
+              "image": "https://www.hugoqdesh.lol/_next/image?url=",
               "sameAs": [
-                "https://www.instagram.com/hugoqdesh",
                 "https://github.com/hugoqdesh",
+                "https://www.instagram.com/hugoqdesh"
               ],
-              "jobTitle": "Fullstack Developer",
+              "jobTitle": "Full Stack Developer",
+              "worksFor": {
+                "@type": "",
+                "name": ""
+              }
             }
             `,
         }}
@@ -39,6 +49,12 @@ export default function Head() {
         data-domain="hugoqdesh.lol"
         src="https://stats.wouldyoubot.gg/js/script.js"
       ></script>
+
+      {/* <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113864436683156"
+        crossOrigin="anonymous"
+      ></script> */}
     </head>
   );
 }

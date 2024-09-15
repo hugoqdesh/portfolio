@@ -32,8 +32,12 @@ export default function Home() {
             className="text-[#ed4160] font-semibold"
           >
             @Quip Cards
+          </Link>{" "}
+          <br />
+          view my other{" "}
+          <Link href="/projects" className="text-[#ed4160] font-semibold">
+            projects
           </Link>
-          .
         </p>
         <br />
         <p className="text-lg">
