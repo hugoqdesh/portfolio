@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Portfolio",
     description: "The website you are on right now!",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/portfolio.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveDemo: "https://hugoqdesh.lol",
     sourceCode: "https://github.com/hugoqdesh/portfolio",
@@ -19,16 +19,16 @@ const projects = [
     id: 2,
     title: "Digestify",
     description: "Powerful Hashing Tools for Your Needs",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/digestify.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    liveDemo: "https://example-weather-app.com",
+    liveDemo: "https://digestify.dev",
     sourceCode: "https://github.com/hugoqdesh/digestify",
   },
   {
     id: 3,
     title: "Zylo",
     description: "Link in bio service for social media",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/zylo.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveDemo: "https://zylo-bio.vercel.app/",
     sourceCode: "https://github.com/hugoqdesh/zylo",
@@ -41,7 +41,7 @@ export default function ModernProjectShowcase() {
   return (
     <main className="max-w-2xl mx-auto py-16 px-4">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-16 text-center">Projects</h2>
+        <h2 className="text-4xl font-bold mb-16 text-center">My Projects</h2>
         <div className="grid grid-cols-1 gap-12">
           {projects.map((project) => (
             <motion.div
@@ -61,7 +61,7 @@ export default function ModernProjectShowcase() {
                 className="w-full h-64 object-cover"
               />
               <motion.div
-                className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white"
+                className="absolute inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center p-6 text-white"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: hoveredProject === project.id ? 1 : 0 }}
                 transition={{ duration: 0.3 }}
