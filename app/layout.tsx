@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head />
+      {/* <Head /> */}
       <body className={font.className}>
         {children}
         <Analytics />
