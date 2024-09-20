@@ -39,7 +39,7 @@ export default function RootLayout({
       {/* <Head /> */}
       <body className={font.className}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
