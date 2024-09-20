@@ -31,7 +31,7 @@ export default function Home() {
             target="_blank"
             className="text-[#ed4160] font-semibold"
           >
-            ___
+            ____
           </Link>{" "}
           <br />
           view my other{" "}
