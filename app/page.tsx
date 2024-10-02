@@ -27,7 +27,7 @@ export default function Home() {
           I&apos;m a 17 year old self-taught web developer from Estonia and
           getting into cybersecurity. Currently working on{" "}
           <Link
-            href=""
+            href="https://demo-buildup.vercel.app/"
             target="_blank"
             className="text-[#ed4160] font-semibold"
           >
