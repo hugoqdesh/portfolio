@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     "Hugo Di Maria",
   ],
   title: "HJ - Web Developer",
-  description: "Hey im Hugo - a 16 year old web developer",
+  description: "Hey im Hugo - a 17 year old web developer",
   openGraph: {
     title: "HJ - Web Developer",
-    description: "Hey im Hugo - a 16 year old web developer",
+    description: "Hey im Hugo - a 17 year old web developer",
     type: "website",
     locale: "en-US",
     url: "https://hugoqdesh.lol/",
