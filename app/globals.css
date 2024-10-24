@@ -4,15 +4,22 @@
 
 html,
 body {
-  @apply bg-[#ffffff] text-black;
+  @apply bg-[#1a1a1a] text-white;
+  background: #1a1a1a;
 }
 
 ::-moz-selection {
   color: white;
-  background: #599ef1;
+  background: #2c2c2c;
 }
 
 ::selection {
   color: white;
-  background: #599ef1;
+  background: #2c2c2c;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
