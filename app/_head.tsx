@@ -2,18 +2,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Hugo Di Maria",
-  description: `Hey im Hugo - a 16 year old web developer`,
+  description: `Hey im Hugo - a 17 year old web developer`,
 };
 
 export default function Head() {
   return (
     <head>
       <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#fff" />
-      <meta name="msapplication-TileColor" content="#fff" />
+      <meta name="theme-color" content="#1a1a1a" />
+      <meta name="msapplication-TileColor" content="#1a1a1a" />
       <meta
         name="google-site-verification"
-        content="GIEMYYdVuBC-MWItd08APF11prO3MTs2ko1Ifu2jINU"
+        content="UXx-lPTue_vz-DZpXV89AMkxCOwy9DGpNnqhU27tUv4"
       />
       <meta property="og:image" content="/thumbnail.png" />
       <meta property="og:image:type" content="image/png" />
