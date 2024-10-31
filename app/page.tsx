@@ -29,9 +29,9 @@ export default function Home() {
               </p>
             </div>
             <p>
-              Im a 17 y/o full stack web developer while also learning game
-              development and cybersecurity. Besides coding all day i enjoy
-              training Judo and Muay Thai.
+              Im a 17 y/o full stack web developer while also learning
+              cybersecurity. <br /> Besides coding all day i enjoy training Judo
+              and Muay Thai.
             </p>
           </div>
 
