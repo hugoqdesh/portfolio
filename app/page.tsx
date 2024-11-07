@@ -39,7 +39,19 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <p className="text-sm">Building</p>
 
-              <p>Currently not building anything.</p>
+              {/* <p>Currently not building anything.</p> */}
+
+              <div>
+                <Link
+                  href="https://www.hugoqdesh.lol/"
+                  className="border-b-2 border-white/10 w-max flex items-center gap-1 text-white/90"
+                >
+                  GhostLayer
+                </Link>
+                <p className="mt-1">
+                  Online privacy, security & anonymity guide
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col gap-4">
