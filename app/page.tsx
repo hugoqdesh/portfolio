@@ -43,7 +43,7 @@ export default function Home() {
 
               <div>
                 <Link
-                  href="https://www.hugoqdesh.lol/"
+                  href="https://ghostlayer.vercel.app"
                   className="border-b-2 border-white/10 w-max flex items-center gap-1 text-white/90"
                 >
                   GhostLayer
@@ -51,6 +51,16 @@ export default function Home() {
                 <p className="mt-1">
                   Online privacy, security & anonymity guide
                 </p>
+              </div>
+
+              <div>
+                <Link
+                  href="https://notiqo.vercel.app"
+                  className="border-b-2 border-white/10 w-max flex items-center gap-1 text-white/90"
+                >
+                  Notiqo
+                </Link>
+                <p className="mt-1">Everything you love in one place</p>
               </div>
             </div>
 
