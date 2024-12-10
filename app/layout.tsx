@@ -11,11 +11,7 @@ const font = Archivo({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hugoqdesh.lol/"),
-  keywords: [
-    "hugoqdesh" + "portfolio",
-    "hj" + "portfolio",
-    "Hugo",
-  ],
+  keywords: ["hugoqdesh" + "portfolio", "hj" + "portfolio", "Hugo"],
   title: "HJ - Web Developer",
   description: "Hey im Hugo - a 17 year old web developer",
   openGraph: {
