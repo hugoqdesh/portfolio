@@ -9,13 +9,13 @@ body {
 }
 
 ::-moz-selection {
-  color: white;
-  background: #2c2c2c;
+  color: #000;
+  background: #bdb5d5;
 }
 
 ::selection {
-  color: white;
-  background: #2c2c2c;
+  color: #000;
+  background: #bdb5d5;
 }
 
 @layer base {

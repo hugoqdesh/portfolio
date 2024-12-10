@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hugo Di Maria",
+  title: "Hugoqdesh",
   description: `Hey im Hugo - a 17 year old web developer`,
 };
 
