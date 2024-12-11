@@ -1,8 +1,13 @@
+import ShinyButton from "@/components/ui/shiny-button";
 import Link from "next/link";
+import { ArrowRight, MessageCircle, MoveUpRight } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="max-w-screen-md px-8 py-12 mx-auto space-y-8">
+      <header className="flex justify-start md:justify-end items-center">
+        <ShinyButton>Start a Project</ShinyButton>
+      </header>
       <section className="space-y-3.5">
         <h1 className="text-lg font-semibold opacity-30">About</h1>
         <p className="text-lg leading-relaxed">
@@ -109,13 +114,25 @@ export default function Home() {
       </section>
 
       <footer
-        className="flex justify-between w-full"
+        className="flex flex-col items-center md:flex-row justify-center md:justify-between w-full gap-2 md:gap-0"
         data-svelte-h="svelte-oa8zu1"
       >
-        <span className="text-sm font-semibold opacity-30">@hugoqdesh</span>
         <span className="text-sm font-semibold opacity-30">
-          Last updated: December 10, 2024
+          hugoqdesh &copy; 2024
         </span>
+        <div className="flex items-center border border-white/10 rounded-full px-1 py-1 text-xs md:text-sm gap-2">
+          <div className="bg-white/10 rounded-full py-0.5 px-3 flex items-center gap-1.5">
+            <MessageCircle className="w-4 h-4" />
+            <p>What&apos;s Happening? </p>
+          </div>
+          <p className="pr-1 flex items-center gap-0.5">
+            Working on{" "}
+            <Link href="/" target="_blank" className="text-blue-500">
+              Portfolio
+            </Link>
+            <MoveUpRight className="w-4 h-4 text-blue-500" />
+          </p>
+        </div>
       </footer>
     </main>
   );
