@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <main className="max-w-screen-md px-8 py-12 mx-auto space-y-8">
       <header className="flex justify-between md:justify-between items-center">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           <div className="rounded-full overflow-hidden">
             <Image
-              src="/cat.png"
+              src="/pfp.png"
               alt="hugoqdesh"
-              width={50}
-              height={50}
-              className="rounded-full select-none"
+              width={53}
+              height={53}
+              className="rounded-full select-none cursor-pointer"
             />
           </div>
           <div className="flex flex-col">
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
 
-        <ShinyButton className="bg-black">Start a Project</ShinyButton>
+        <ShinyButton className="bg-primary">Start a Project</ShinyButton>
       </header>
       <Particles
         className="absolute inset-0"
