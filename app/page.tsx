@@ -19,12 +19,14 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col">
-            <p className="text-lg font-semibold">hugoqdesh</p>
+            <p className="text-lg font-semibold"> Hey, I&apos;m Hugo 👋</p>
             <p className="text-sm text-white/40">Full Stack Developer</p>
           </div>
         </div>
 
-        <ShinyButton className="bg-primary">Start a Project</ShinyButton>
+        <ShinyButton className="bg-primary hidden md:block">
+          Start a Project
+        </ShinyButton>
       </header>
       <Particles
         className="absolute inset-0"
@@ -175,38 +177,25 @@ export default function Home() {
           </Link>
           <Link
             className="flex gap-1 hover:text-white/40 transition-all duration-300"
-            href="https://github.com/hugoqdesh"
-            target="_blank"
-          >
-            <span className="text-lg">Github</span>
-          </Link>
-          <Link
-            className="flex gap-1 hover:text-white/40 transition-all duration-300"
             href="https://instagram.com/hugoqdesh"
             target="_blank"
           >
             <span className="text-lg">Instagram</span>
           </Link>
+          <Link
+            className="flex gap-1 hover:text-white/40 transition-all duration-300"
+            href="https://github.com/hugoqdesh"
+            target="_blank"
+          >
+            <span className="text-lg">Github</span>
+          </Link>
         </div>
       </section>
 
-      <footer className="flex flex-col items-center md:flex-row justify-center md:justify-between w-full gap-2 md:gap-0">
+      <footer className="flex flex-row justify-between w-full gap-2 md:gap-0">
         <span className="text-sm font-semibold text-white/40">
-          hugoqdesh &copy; 2024
+          &copy; 2024 hugoqdesh
         </span>
-        <div className="flex items-center border border-white/10 rounded-full px-1 py-1 text-xs md:text-sm gap-2">
-          <div className="bg-white/10 rounded-full py-0.5 px-3 flex items-center gap-1.5">
-            <MessageCircle className="w-4 h-4" />
-            <p>What&apos;s Happening? </p>
-          </div>
-          <p className="pr-1 flex items-center gap-0.5">
-            Building{" "}
-            <Link href="/" target="_blank" className="text-blue-500">
-              Portfolio
-            </Link>
-            <MoveUpRight className="w-4 h-4 text-blue-500" />
-          </p>
-        </div>
       </footer>
     </main>
   );
