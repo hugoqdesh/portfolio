@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply bg-[#131313] text-white;
+  @apply bg-[#09090b] text-white;
 }
 
 ::-moz-selection {

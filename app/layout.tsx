@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "./_head";
 
-const font = Archivo({
+const font = Lora({
   subsets: ["latin"],
   weight: "400",
 });
