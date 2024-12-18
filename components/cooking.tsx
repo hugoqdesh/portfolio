@@ -13,7 +13,7 @@ const Cooking = () => {
             target="_blank"
             className="text-lg hover:underline underline-offset-2"
           >
-            Nothing
+            Nothing yet | got ideas coming up...
           </Link>
           <p className="text-sm text-white/40"></p>
         </div>

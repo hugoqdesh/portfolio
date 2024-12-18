@@ -10,7 +10,7 @@ const Projects = () => {
       <div className="grid grid-cols-2 gap-4">
         <Link
           href="https://www.digestify.dev/"
-          className="border border-white/10 rounded-lg p-3 space-y-1 hover:scale-105 transition-all duration-200"
+          className="border-2 group border-white/10 rounded-xl p-4 space-y-1 hover:border-yellow-500/60 transition-all duration-200"
           target="_blank"
         >
           <Image
@@ -21,7 +21,7 @@ const Projects = () => {
             className="mx-auto rounded-xl pb-1"
           />
           <h2>Digestify</h2>
-          <p className="text-white/40 text-sm">
+          <p className="text-white/40 group-hover:text-white/60 transition-all duration-300 text-sm">
             Streamline your hashing workflows with our suite of cutting-edge
             tools.
           </p>

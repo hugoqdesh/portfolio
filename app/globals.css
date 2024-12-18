@@ -8,11 +8,11 @@ body {
 }
 
 ::-moz-selection {
-  background: #372620;
+  background: #e5b82573;
 }
 
 ::selection {
-  background: #372620;
+  background: #e5b82573;
 }
 
 @layer base {
