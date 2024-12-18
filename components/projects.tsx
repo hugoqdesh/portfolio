@@ -21,7 +21,7 @@ const Projects = () => {
             className="mx-auto rounded-xl pb-1"
           />
           <h2>Digestify</h2>
-          <p className="text-white/40 group-hover:text-white/60 transition-all duration-300 text-sm">
+          <p className="text-white/40 group-hover:text-white/60 transition-all duration-300 text-xs md:text-sm">
             Streamline your hashing workflows with our suite of cutting-edge
             tools.
           </p>

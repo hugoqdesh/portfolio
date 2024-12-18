@@ -83,56 +83,56 @@ const About = () => {
 
         <div className="grid grid-cols-3 gap-y-2 text-center">
           <Link
-            href="/"
+            href="https://nextjs.org/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             Next.js
           </Link>
           <Link
-            href="/"
+            href="https://react.dev/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             React
           </Link>
           <Link
-            href="/"
+            href="https://www.w3schools.com/js/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             JavaScript
           </Link>
           <Link
-            href="/"
+            href="https://www.typescriptlang.org/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             TypeScript
           </Link>
           <Link
-            href="/"
+            href="https://tailwindcss.com/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             Tailwind
           </Link>
           <Link
-            href="/"
+            href="https://www.prisma.io/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             Prisma
           </Link>
           <Link
-            href="/"
+            href="https://www.w3schools.com/html/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             HTML
           </Link>
           <Link
-            href="/"
+            href="https://www.w3schools.com/css/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
@@ -146,14 +146,14 @@ const About = () => {
 
         <div className="grid grid-cols-3 gap-y-2 text-center">
           <Link
-            href="/"
+            href="https://www.python.org/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
             Python
           </Link>
           <Link
-            href="/"
+            href="https://learn.microsoft.com/en-us/dotnet/csharp/"
             target="_blank"
             className="hover:bg-secondary/5 hover:text-yellow-500 transition-all duration-200 rounded-md py-1 w-28"
           >
